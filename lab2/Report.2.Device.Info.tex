@@ -1,0 +1,41 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Lab 2: Device's information}
+\author{Nguyen Nhu Duy - 2540044}
+
+\begin{document}
+\maketitle
+
+The objective of this lab is to use \texttt{numba} to retrieve information about the available GPU, including the device name, core information, and memory size.
+
+The GPU information obtained is:
+\begin{itemize}
+    \item Device name: NVIDIA GeForce GTX 1050 Ti with Max-Q Design
+    \item Compute Capability: 6.1
+    \item Multiprocessor count: 6
+    \item Total CUDA cores: $6 \times 128 = 768$
+    \item Total memory: approximately 4 GB
+\end{itemize}
+
+The following figure shows the output obtained from the labwork.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{gpu_information.png}
+    \caption{GPU information obtained using \texttt{numba.cuda}.}
+\end{figure}
+
+\end{document}
